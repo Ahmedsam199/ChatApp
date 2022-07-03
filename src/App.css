@@ -1,0 +1,507 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+
+  }
+}
+body{
+ font-family: 'Cairo', sans-serif;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.AdduG {
+  margin-top: 130px;
+align-items: center;
+justify-content: center;
+
+  
+}
+.Links{
+display: flex;
+
+justify-content: center;
+align-items: center;
+width: 100%;
+margin: 10px;
+}
+.card {
+  background-color: #D2E0BF !important;
+  width: 18rem;
+display: flex;
+float: left;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 20%);
+  border-radius: 10px;
+
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.card:hover {
+  transform: scale(1.07);
+  background-color: #cfdac1 !important;
+}
+.card a{
+  text-decoration: none;
+  color: #282c34;
+}
+
+.bg {
+  animation:slide 7s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(112, 175, 175) 50%, rgb(75, 90, 100) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:3s;
+}
+
+.bg3 {
+  animation-duration:3s;
+}
+
+.content {
+  
+  border-radius:.25em;
+  
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+
+
+
+.chat-window{
+  height: 100%;
+}
+.chat-window p {
+  margin: 0;
+}
+.chat-window .chat-header {
+  height: 45px;
+  border-radius: 0px;
+  background: #263238;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.chat-window .chat-header p {
+  display: block;
+  padding: 0 1em 0 2em;
+  color: rgb(224, 212, 212);
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.chat-window .chat-body {
+  height: calc(600px - (45px + 70px));
+  border: 1px solid #263238;
+  background: #fff;
+  width: 700px;
+background-color: transparent;
+background: rgba(0, 0, 0, .5);
+  
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.chat-window .chat-body .message-container::-webkit-scrollbar {
+  display: none;
+}
+.chat-window .chat-body .message {
+  height: auto;
+  padding: 10px;
+  display: flex;
+}
+.message-content p{
+  font-size: 20px;
+}
+.dropItem{
+  width: fit-content;
+  height: fit-content;
+ display: flex;
+ flex-direction: column;
+  width: auto !important;
+
+transition: 0.5s !important;
+  align-items: center !important;
+  justify-content: center !important;  
+margin: 0px;
+padding: 0px;  
+
+
+}
+.BB{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.avat{
+  margin-top: 5px;
+}
+message-meta {
+  display: flex;
+  flex-direction: column;
+margin-top: 100px !important; 
+  
+}
+#other .area{
+  display: flex;
+  align-items: flex-start;
+}
+#you .area { 
+    display: grid;
+    grid-template-areas: " left right ";
+   grid-area: left;
+}
+.message-content{
+grid-area: left;
+}
+ .dropdown-menu{
+margin: 0%;
+background: #282c34 !important;
+  border: none;
+  transition: 0.4s !important;
+min-width: 3rem !important;  
+min-height: 3.4rem !important;
+
+}
+
+
+.dropItem button{
+  transition: 0.5s !important;
+  justify-content: flex-start !important;
+
+ 
+color: #ffffff !important;  
+ 
+}
+.dropItem button:hover{
+  border: none;
+
+  pointer-events: none !important;
+}
+.chat-window .chat-body .message .message-content {
+  width: auto;
+  height: auto;
+  min-height: 60px;
+  transition: 0.2s;
+  max-width: 200px;
+ overflow-wrap: break-word;
+  word-break: break-word;
+  background-color: #607d8b;
+  border-radius: 15px;
+  color: white;
+
+  
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  
+  
+}
+.modal-content{
+  color:  #fff;
+  background-color: #282c34 !important;
+  border: none !important;
+}
+.modal-footer{
+  border: none !important;
+  
+}
+.modal-header{
+  border: none !important;
+}
+.dropdown-menu{
+  background-color: #636466;
+  
+}
+
+.swal-title {
+  color: #fff !important;
+}
+.swal-text{
+  color: #fff !important;
+}
+.swal-modal {
+  background-color: #282c34;
+}
+.dropdown-menu a{
+  transition: 0.4s;
+}
+.dropdown-menu a:hover{
+  background: #3b3c3d;
+}
+.modal-body input{
+  margin-left: 120px;
+ border: none !important;
+  transition: 0.3s;
+}
+.modal-body input:focus{
+  transform: scale(1.05);
+}
+#you {
+  justify-content: flex-end;
+}
+
+#you .message-content {
+  justify-content: flex-end;
+}
+
+
+
+#you .ava{
+display: flex;
+margin-left: 170px;
+}
+#other {
+  justify-content: flex-start;
+}
+
+#other .message-content {
+  justify-content: flex-start;
+  background-color: rgb(151, 165, 190);
+}
+#other .message-content p{
+  display: flex ;
+  justify-content: flex-start !important;
+ 
+}
+#other .ava{
+display: flex;
+align-items: flex-start;
+}
+#other .message-content button{
+  display: none !important;
+  pointer-events: none !important;
+}
+
+
+#you .message-meta {
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.message-meta #author {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.chat-window .chat-body .message .message-meta {
+  display: flex;
+  font-size: 12px;
+}
+
+.chat-window .chat-footer {
+  height: 40px;
+  border: 1px solid #263238;
+  border-top: none;
+  
+  display: flex;
+}
+
+
+.chat-window .chat-footer button {
+  border: 0;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  flex: 15%;
+  transition: 0.5s;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 25px;
+  color: lightgray;
+}
+
+.chat-window .chat-footer button:hover {
+ background-color: #000 !important;
+}
+
+.ROOT_CSS{
+  height: 480px;
+  overflow: scroll;
+}
+.div{
+  padding-top: 50px !important;
+  transition: 0.4s;
+}
+.div:hover{
+  background: #607d8b;
+  border-radius: 20px !important;
+  color: white !important;
+}
+.App1 h1{
+  text-align: center;
+  transition: 0.4s !important;
+padding: 5px;
+overflow: scroll !important;
+}
+.App1{
+  min-height: auto;
+  overflow: scroll !important;
+}
+.App1 h1:hover{
+  background: #607d8b !important;
+  border-radius: 20px !important;
+  color: #000 !important;
+
+}
+.navb{
+  transition:0.4s !important;
+  white-space: none !important;
+  text-decoration: none !important;
+  color: #282c34 !important;
+}
+.navb:hover button{
+  transform: scale(1.1) !important;
+}
+#other .App1 h1{
+  display: none !important;
+}
+.swal2-popup .swal2-modal .swal2-show{
+  background-color: #000 !important;
+}
+.msgcontt img{
+margin-right: 15px;
+}
+.swal2-popup{
+  color: #000 !important;
+}
+.swal2-show{
+  background-color: #282c34 !important;
+}
+img{
+  margin-left: 35px !important;
+}
+.swal2-title{
+  color: #fff !important;
+}
+.video-react-current-time-display ,.video-react-time-divider,.video-react-duration-display{
+  display: none;
+}
+.Audioss{
+  display: flex !important;
+margin-left: 130px;
+}
+.audio-react-recorder__canvas{
+  display: none !important;
+}
+.recbtn button{
+margin: 4px;
+}
+.Audioss button{
+
+}
+#noimg {
+  display: none !important;
+}
+#noimg video{
+  display: none !important;
+}
+.react-audio-player {
+  margin-right: 3px !important;
+  margin-top: 7px !important;
+  width: 180px !important;
+}
+.playerr{
+ display: flex;
+} 
+#other .videoa{
+  
+}
+#other .audio{
+margin-top: 0 !important;
+margin-bottom: 7px !important;
+  margin-right: 0px !important;
+}
+.videoa{
+}
+.video-react-video{
+  width: 200px !important;
+  height: 100px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+padding-top: 0 !important;
+}
+.video-react-controls-enabled{
+  padding: 2px !important;
+
+}
+
+.video-react-video button{
+  display: none !important;
+}
+.video-react-control-text{
+  display: none !important;
+}
+.video-react-button{
+  display: none !important;
+}
+
+.video-react-progress-control{
+  display: none !important;
+}
